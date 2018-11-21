@@ -6,7 +6,7 @@ php:
 sudo: required
 
 services:
-  - php
+  - apache2
   
 after_deploy:
   - echo "done deploying"
