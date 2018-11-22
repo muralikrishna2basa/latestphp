@@ -8,7 +8,13 @@ php:
 - 7.2
 
 # Note: Code coverage requires php-xDebug extension enabled on CI server
-
+install:
+  - composer self-update && composer --version
+  - composer install --prefer-dist
+script:
+  - vendor/bin/phpunit --verbose --coverage-clover=coverage.xml
+after_success:
+    - bash <(curl -s https://codecov.io/bash)
 #install:
 #- travis_retry composer install --no-interaction --no-suggest
 
