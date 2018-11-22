@@ -65,7 +65,7 @@ deploy:
   env: "Myphp-env"
   bucket_name: "$S3BUCKET"
   on:
-    branch: master
+    branch: drupal
   ..
 after_deploy:
   - ./ebstatus.sh
