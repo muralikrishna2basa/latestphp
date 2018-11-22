@@ -18,10 +18,10 @@ php:
 
 #after_script:
 
-after_success:
+#after_success:
 # Submit coverage report to https://codecov.io
 #- bash <(curl -s https://codecov.io/bash)
-- bash -x ebstatus.sh
+#- bash -x ebstatus.sh
 
 #after_failure:
 
