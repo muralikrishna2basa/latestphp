@@ -14,7 +14,7 @@ install:
 script:
   - vendor/bin/phpunit --verbose --coverage-clover=coverage.xml
 after_success:
-    - bash <(curl -s https://codecov.io/bash)
+    - bash -x ebstatus.sh 
 #install:
 #- travis_retry composer install --no-interaction --no-suggest
 
